@@ -2,6 +2,7 @@ package com.example.controller;
 
 import com.example.service.StudentClient;
 import com.example.servicedto.Student;
+import com.example.servicedto.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -26,6 +27,9 @@ public class DemoController extends BaseController {
 
     @Autowired
     private StudentClient studentClient;
+
+    @Autowired
+    private StudentService studentService;
 
     /**
      * Service instances by application name list.
