@@ -1,0 +1,10 @@
+
+#server:
+#  #被注册项目端口号
+#  port: 8090
+
+#eureka:
+#  client:
+#    #注册到哪个注册中心
+#    service-url:
+#      defaultZone: http://walnut:123456@localhost:8761/eureka/
