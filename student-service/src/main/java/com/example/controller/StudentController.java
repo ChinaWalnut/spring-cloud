@@ -30,12 +30,12 @@ public class StudentController {
     }
 
     @GetMapping(value = "/{studentId}")
-    public String getInfo(@PathVariable("studentId") Long studentId ){
+    public Student getInfo(@PathVariable("studentId") Long studentId ){
         Gson gson = new Gson();
         Student student = new Student();
         student.setName("李四");
         student.setNumber("s12138");
-        return gson.toJson(student);
+        return student;
     }
 
 }

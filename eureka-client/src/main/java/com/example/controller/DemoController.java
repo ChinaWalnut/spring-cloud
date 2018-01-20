@@ -55,7 +55,7 @@ public class DemoController extends BaseController {
     @RequestMapping(value = "/hello")
     @ResponseBody
     public String index(Student student) {
-        String student1 = studentClient.getInfo(1L);
+        Student student1 = studentClient.getInfo(1L);
         System.out.println(student);
         return "hello world!";
     }
